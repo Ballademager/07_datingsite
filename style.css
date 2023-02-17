@@ -1,3 +1,13 @@
+:root {
+  --primary: #950404;
+  --secondary: #d58b8b;
+  --baggrund: #f3a3b1;
+  --knap: #f5bcd1;
+  --nav: #fddcd2;
+  --box: #f9dce7;
+  --white: #fff;
+}
+
 /*************** Reset *********************/
 * {
   margin: 0;
@@ -13,10 +23,20 @@ img {
 
 /*************** Generel *********************/
 
+body {
+  background-color: var(--box);
+}
+
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
 /*************** Header *********************/
 
 header {
-  background-color: #fddcd2;
+  background-color: var(--nav);
   padding: 5px 20px;
   display: flex;
   justify-content: space-between;
@@ -25,7 +45,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #950404;
+  color: var(--primary);
 }
 
 .logo {
@@ -35,9 +55,25 @@ a {
 
 .nav_button {
   font-size: 0.9rem;
-  border: #950404 2px solid;
+  border: var(--primary) 2px solid;
   border-radius: 30px;
   padding: 7px 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+}
+
+/*************** Box *********************/
+
+section {
+  background-color: var(--baggrund);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0px 30px 0px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0px;
 }
