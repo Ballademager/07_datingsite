@@ -3,7 +3,30 @@ main {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  margin: 2rem 4rem;
+  padding: 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  row-gap: 1rem;
+  /* flex-direction: column; */
   background-color: var(--box);
+  border-radius: 30px;
+}
+
+input,
+select,
+textarea {
+  font-family: var(--ff-text);
+  border-radius: 15px;
+  border: none;
+  padding: 0.5rem;
+}
+label {
+  font-family: var(--ff-text);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+placeholder {
+  font-family: var(--ff-text);
 }
