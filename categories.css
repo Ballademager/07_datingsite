@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-image: url(/img/categories.webp);
+  background-size: cover;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+h1 {
+  font-family: "lobster";
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.category_box {
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #8e101f;
+  border-radius: 35px;
+  font-family: "lobster";
+  text-align: center;
+  padding: 4.5rem 2rem;
+  font-size: 3rem;
+}
