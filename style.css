@@ -1,0 +1,43 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Generel *********************/
+
+/*************** Header *********************/
+
+header {
+  background-color: #fddcd2;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #950404;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+}
+
+.nav_button {
+  font-size: 0.9rem;
+  border: #950404 2px solid;
+  border-radius: 30px;
+  padding: 7px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}

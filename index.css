@@ -1,0 +1,25 @@
+/*************** Index *********************/
+
+body {
+  background-image: url(img/forsidebillede.webp);
+}
+
+#front_text {
+  display: grid;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 10rem;
+  color: #950404;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #950404;
+}
