@@ -6,7 +6,6 @@ body {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 90vh;
 }
 h1 {
   font-family: "lobster";
@@ -14,11 +13,13 @@ h1 {
   font-size: 4rem;
   font-weight: 400;
   text-align: center;
+  margin-top: 1rem;
 }
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  margin-top: 2rem;
 }
 .category_box {
   background-color: rgba(255, 255, 255, 0.55);
@@ -28,4 +29,23 @@ h1 {
   text-align: center;
   padding: 4.5rem 2rem;
   font-size: 3rem;
+}
+.category_box:hover {
+  transition: 2s ease-in;
+}
+.category_box:first-child:hover {
+  background-image: url(img/LGBT+category.webp);
+  background-position: 15% 30%;
+}
+.category_box:nth-child(2):hover {
+  background-image: url(img/niche-category.webp);
+  background-position: 53% 17%;
+}
+.category_box:nth-child(3):hover {
+  background-image: url(img/fetish-category.webp);
+  background-position: 31% 36%;
+}
+.category_box:nth-child(4):hover {
+  background-image: url(img/standard-category.webp);
+  background-position: 47% 38%;
 }
