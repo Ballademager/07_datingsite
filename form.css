@@ -1,0 +1,9 @@
+main {
+  background-color: var(--baggrund);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box);
+}
