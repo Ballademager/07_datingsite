@@ -1,0 +1,48 @@
+/*************** Product *********************/
+
+body {
+  background-color: #f9dce7;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+section {
+  background-color: #f3a3b1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+h3,
+.paymentreq {
+  color: #d58b8b;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #950404;
+  line-height: 1.6;
+}
+
+.box {
+  background-color: #f9dce7;
+  margin: 40px 80px;
+  padding: 50px;
+  border-radius: 60px;
+}
+
+.website_button {
+  background-color: #f9dce7;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
