@@ -23,6 +23,10 @@ img {
 
 /*************** Generel *********************/
 
+body {
+  background-color: var(--box);
+}
+
 main {
   max-width: 1050px;
   margin: 0 auto;
@@ -56,4 +60,20 @@ a {
   padding: 7px 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+}
+
+/*************** Box *********************/
+
+section {
+  background-color: var(--baggrund);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0px 30px 0px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0px;
 }
