@@ -2,13 +2,14 @@ body {
   margin: 0;
   background-image: url(/img/categories.webp);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 main {
   max-width: 1050px;
   margin: 0 auto;
 }
 h1 {
-  font-family: "lobster";
+  font-family: var(--ff-lobster);
   color: white;
   font-size: 4rem;
   font-weight: 400;
@@ -23,32 +24,65 @@ main a {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .category_box {
   background-color: rgba(255, 255, 255, 0.55);
   color: #8e101f;
   border-radius: 35px;
-  font-family: "lobster";
+  font-family: var(--ff-lobster);
   text-align: center;
   padding: 4.5rem 2rem;
   font-size: 3rem;
 }
-.category_box:hover {
-  transition: 2s ease-in;
+@media (min-width: 550px) {
+  .category_box:hover {
+    transition: 2s ease-in;
+  }
+  .category_box:first-child:hover {
+    background-image: url(img/LGBT+category.webp);
+    background-position: 15% 30%;
+  }
+  .category_box:nth-child(2):hover {
+    background-image: url(img/niche-category.webp);
+    background-position: 53% 17%;
+  }
+  .category_box:nth-child(3):hover {
+    background-image: url(img/fetish-category.webp);
+    background-position: 31% 36%;
+  }
+  .category_box:nth-child(4):hover {
+    background-image: url(img/standard-category.webp);
+    background-position: 47% 38%;
+  }
 }
-.category_box:first-child:hover {
-  background-image: url(img/LGBT+category.webp);
-  background-position: 15% 30%;
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .grid_1-1 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0.5rem 0 0.5rem;
+  }
+  .category_box {
+    background-color: rgba(255, 255, 255, 0.55);
+    color: var(--primary);
+    font-size: 2.5rem;
+    border-radius: 35px;
+    font-family: var(--ff-lobster);
+    text-align: center;
+    padding: 1.5rem 2rem;
+  }
 }
-.category_box:nth-child(2):hover {
-  background-image: url(img/niche-category.webp);
-  background-position: 53% 17%;
-}
-.category_box:nth-child(3):hover {
-  background-image: url(img/fetish-category.webp);
-  background-position: 31% 36%;
-}
-.category_box:nth-child(4):hover {
-  background-image: url(img/standard-category.webp);
-  background-position: 47% 38%;
+@media (max-width: 350px) {
+  .nav_button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
 }
