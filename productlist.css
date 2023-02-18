@@ -1,0 +1,93 @@
+:root {
+  --primary: #950404;
+  --secondary: #d58b8b;
+  --baggrund: #f3a3b1;
+  --knap: #f5bcd1;
+  --nav: #fddcd2;
+  --box: #f9dce7;
+  --white: #fff;
+
+  --ff-lobster: "Lobster", cursive;
+  --ff-text: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+}
+h2 {
+  font-family: var(--ff-lobster);
+  color: var(--primary);
+  font-size: 2.8em;
+}
+
+h3 {
+  font-family: var(--ff-lobster);
+  color: var(--secondary);
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: var(--baggrund);
+  padding-bottom: 100px;
+}
+
+.box {
+  background-color: #f9dce7;
+  margin: 50px 110px;
+  padding-inline: 2.2rem;
+  padding-block: 3rem;
+  border-radius: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#billede {
+  background-color: green; /*skal slettes*/
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  background-size: cover;
+
+  background-position: 50% 50%;
+}
+
+#indhold {
+  margin-left: 1rem;
+}
+
+.free {
+  font-family: var(--ff-text);
+  color: var(--knap);
+  position: absolute;
+  margin-top: 20px;
+  background-color: white;
+  padding: 3px 15px 3px 15px;
+  box-shadow: 2px 2px 5px rgb(104 37 37);
+}
+
+button {
+  margin-top: 3rem;
+  font-size: large;
+  color: var(--white);
+  background-color: var(--knap);
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+/******* add class *********/
+
+.hidden {
+  display: none;
+}
+
+/***** mobil format *******/
+
+@media (max-width: 600px) {
+}
