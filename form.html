@@ -25,9 +25,9 @@
         <div class="formbox">
             <form action="">
                 <label for="name">App Name:</label>
-                <input placeholder="Tinder" type="text">
+                <input placeholder="Tinder" type="text" name="name" required>
                 <label for="slogan">Slogan:</label>
-                <input placeholder='"Start Swiping"' type="text">
+                <input placeholder='"Start Swiping"' type="text" name="slogan" required>
                 <label for="">Category:</label>
                 <select name="category" id="category">
                     <option value="choice">Choose category</option>
@@ -36,17 +36,24 @@
                     <option value="Fetish">Fetish</option>
                     <option value="Conform">Conform</option>
                 </select>
-                <label for="description">Description:</label><textarea placeholder="Max 200 characters (with spaces)"
-                    name="" rows="5" id="" cols="30" rows="10"></textarea>
+                <label for="description">Description:</label>
+                <textarea placeholder="Max 200 characters (with spaces)" name="description" rows="5" id="" cols="30"
+                    rows="10"></textarea>
+                <label for="users">Users:</label>
+                <input type="number" name="users" placeholder="400,000">
                 <label for="founded">Founded:</label>
-                <input type="date">
+                <input type="date" name="founded">
                 <label for="free">Free to use:</label>
-                <input type="checkbox">
+                <input type="checkbox" name="paymentreq">
                 <button type="submit">Submit</button>
             </form>
         </div>
+        <ul></ul>
+        <template>
+            <li>Submitted Apps</li>
+        </template>
     </main>
-
+    <script src="form.js"></script>
 </body>
 
 </html>

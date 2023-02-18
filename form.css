@@ -1,5 +1,6 @@
 main {
   background-color: var(--baggrund);
+  /* padding-bottom: 1rem; */
 }
 
 form {

@@ -28,12 +28,13 @@ img {
 
 body {
   background-color: var(--box);
+  height: 100svh;
 }
 
 main {
   max-width: 1050px;
   margin: 0 auto;
-  min-height: 85vh;
+  height: 100svh;
 }
 
 /*************** Header *********************/
