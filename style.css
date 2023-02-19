@@ -6,6 +6,9 @@
   --nav: #fddcd2;
   --box: #f9dce7;
   --white: #fff;
+
+  --ff-lobster: "Lobster", cursive;
+  --ff-text: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*************** Reset *********************/
@@ -30,20 +33,20 @@ body {
 main {
   max-width: 1050px;
   margin: 0 auto;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 /*************** Header *********************/
 
 header {
   background-color: var(--nav);
-  padding: 5px 20px;
+  padding: 0.4rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-a {
+header a {
   text-decoration: none;
   color: var(--primary);
 }
@@ -53,7 +56,7 @@ a {
   font-family: "Lobster", cursive;
 }
 
-.nav_button {
+.nav_button a {
   font-size: 0.9rem;
   border: var(--primary) 2px solid;
   border-radius: 30px;
@@ -86,4 +89,39 @@ h1 {
   color: var(--white);
   text-align: center;
   padding: 10px 0px;
+}
+@media (max-width: 550px) {
+  header {
+    padding: 0.2rem 0.4rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  .nav_button a {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+@media (max-width: 350px) {
+  header {
+    padding: 0.2rem 0.4rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .nav_button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .nav_button a {
+    font-size: 0.5rem;
+    padding: 0.1rem 0.3rem;
+  }
 }
