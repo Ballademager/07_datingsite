@@ -21,13 +21,11 @@ h1 {
 h2 {
   font-family: var(--ff-lobster);
   color: var(--primary);
-  font-size: 2.8em;
 }
 
 h3 {
   font-family: var(--ff-lobster);
   color: var(--secondary);
-  font-size: 1.5rem;
 }
 
 main {
@@ -37,28 +35,20 @@ main {
 
 .box {
   background-color: #f9dce7;
-  margin: 50px 110px;
   padding-inline: 2.2rem;
   padding-block: 3rem;
   border-radius: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
-#billede {
+.billede {
   background-color: green; /*skal slettes*/
   overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 img {
   display: block;
-  background-size: cover;
-
-  background-position: 50% 50%;
-}
-
-#indhold {
-  margin-left: 1rem;
 }
 
 .free {
@@ -72,7 +62,6 @@ img {
 }
 
 button {
-  margin-top: 3rem;
   font-size: large;
   color: var(--white);
   background-color: var(--knap);
@@ -87,7 +76,34 @@ button {
   display: none;
 }
 
-/***** mobil format *******/
+/***** stort format *******/
 
-@media (max-width: 600px) {
+@media (min-width: 690px) {
+  .box {
+    display: grid;
+    grid-template-columns: 175px auto;
+    height: 260px;
+    margin: 50px 110px;
+  }
+
+  .indhold {
+    margin-left: 1rem;
+  }
+}
+
+/***** mobil format ****/
+
+@media (max-width: 689px) {
+  h2 {
+    padding-block: 10px;
+  }
+
+  .box {
+    margin: 50px 8px 10px 8px;
+  }
+}
+
+.radio-box {
+  display: flex;
+  background-color: var(--box);
 }
