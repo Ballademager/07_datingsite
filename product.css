@@ -1,37 +1,62 @@
-/*************** Product *********************/
+/*************** Font *********************/
 
-h3,
-.paymentreq {
-  color: var(--secondary);
-  font-size: 1.5rem;
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*************** Color *********************/
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+/*************** Box *********************/
+
+.box {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  line-height: 70px;
+  column-gap: 50px;
+  margin-top: 70px;
+}
+
+.left {
+  margin-top: 90px;
+}
+
+.right {
+  text-align: right;
+}
+
+/*************** Text *********************/
+
+h3 {
+  font-size: 1.9rem;
 }
 
 p {
-  color: var(--primary);
-  line-height: 1.6;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
+
+#paymentreq {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+/*************** Button *********************/
 
 .website_button a {
   background-color: var(--baggrund);
   color: var(--white);
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 5px 30px;
-  margin: 5px 0px;
   border-radius: 20px;
-}
-
-.box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  line-height: 70px;
-  gap: 30px;
-}
-
-.right {
-  text-align: right;
 }
