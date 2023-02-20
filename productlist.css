@@ -14,7 +14,7 @@
 h1 {
   font-family: "Lobster", cursive;
   font-size: 4rem;
-  color: white;
+  color: var(--white);
   text-align: center;
   padding: 10px 0px;
 }
@@ -35,21 +35,10 @@ main {
 }
 
 .box {
-  background-color: #f9dce7;
+  background-color: var(--box);
   padding-inline: 2.2rem;
   padding-block: 3rem;
   border-radius: 70px;
-}
-
-.billede {
-  background-color: green; /*skal slettes*/
-  overflow: hidden;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-img {
-  display: block;
 }
 
 .free {
@@ -57,12 +46,20 @@ img {
   color: var(--knap);
   position: absolute;
   margin-top: 20px;
-  background-color: white;
+  background-color: var(--white);
   padding: 3px 15px 3px 15px;
   box-shadow: 2px 2px 5px rgb(104 37 37);
 }
 
-button {
+.indhold {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.indhold a {
+  text-decoration: none;
+  margin-top: auto;
   font-size: large;
   color: var(--white);
   background-color: var(--knap);
@@ -71,15 +68,37 @@ button {
   border-radius: 20px;
 }
 
+.anbefalet {
+  position: absolute;
+}
+
 /******* add class *********/
 
 .hidden {
   display: none;
 }
 
+/***** mobil format ****/
+
+@media (max-width: 689px) {
+  h2 {
+    padding-top: 10px;
+  }
+
+  .box {
+    margin: 50px 8px 10px 8px;
+  }
+  .indhold a {
+    margin-top: 2rem;
+  }
+}
+
 /***** web format *******/
 
 @media (min-width: 690px) {
+  .indhold {
+    margin-left: 1rem;
+  }
   .box {
     display: grid;
     grid-template-columns: 175px auto;
@@ -87,22 +106,285 @@ button {
     margin: 50px 110px;
   }
 
-  .indhold {
-    margin-left: 1rem;
+  .billede img {
+    height: 175px;
+    width: 175px;
+    object-fit: cover;
+  }
+
+  /**************************************/
+
+  /****** hjerter *****/
+
+  .heart1-container {
+    width: 5%;
+    position: absolute;
+    aspect-ratio: 23/20;
+    bottom: 0%;
+    left: 5%;
+    z-index: -1;
+  }
+  .heart1-sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/heart1.svg);
+    background-size: 100%;
+  }
+
+  /*** bevægelse ****/
+
+  .float1 {
+    animation-name: float1_kf;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes float1_kf {
+    0% {
+      bottom: 0;
+      left: 1%; /* Start at the left */
+    }
+    5% {
+      bottom: 5%;
+      left: 0%;
+    }
+    10% {
+      bottom: 10%;
+      left: 1%;
+    }
+    15% {
+      bottom: 15%;
+      left: 0%;
+    }
+    20% {
+      bottom: 20%;
+      left: 1%;
+    }
+    25% {
+      bottom: 25%;
+      left: 0;
+    }
+
+    30% {
+      bottom: 30%;
+      left: 1%;
+    }
+    35% {
+      bottom: 35%;
+      left: 0;
+    }
+    40% {
+      bottom: 40%;
+      left: 1%;
+    }
+    45% {
+      bottom: 45%;
+      left: 0;
+    }
+    50% {
+      bottom: 50%;
+      left: 1%;
+    }
+    55% {
+      bottom: 55%;
+      left: 0;
+    }
+    60% {
+      bottom: 60%;
+      left: 1%;
+    }
+    65% {
+      bottom: 65%;
+      left: 0;
+    }
+    70% {
+      bottom: 70%;
+      left: 1%;
+    }
+    75% {
+      bottom: 75%;
+      left: 0;
+    }
+    80% {
+      bottom: 80%;
+      left: 1%;
+    }
+    85% {
+      bottom: 85%;
+      left: 0;
+    }
+    90% {
+      bottom: 90%;
+      left: 1%;
+    }
+    95% {
+      bottom: 95%;
+      left: 0;
+    }
+    100% {
+      bottom: 100%;
+      left: 1%;
+    }
+  }
+
+  /***** forsøg 2 ******/
+  .heart2-container {
+    width: 5%;
+    position: absolute;
+    aspect-ratio: 23/20;
+    bottom: 0%;
+    left: 5%;
+    z-index: -1;
+  }
+  .heart2-sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/heart2.svg);
+    background-size: 100%;
+  }
+
+  .float2 {
+    animation-name: float2_kf;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes float2_kf {
+    0% {
+      bottom: 0;
+      left: 3%; /* Start at the left */
+    }
+    5% {
+      bottom: 5%;
+      left: 2%;
+    }
+    10% {
+      bottom: 10%;
+      left: 3%;
+    }
+    15% {
+      bottom: 15%;
+      left: 2%;
+    }
+    20% {
+      bottom: 20%;
+      left: 3%;
+    }
+    25% {
+      bottom: 25%;
+      left: 2%;
+    }
+
+    30% {
+      bottom: 30%;
+      left: 3%;
+    }
+    35% {
+      bottom: 35%;
+      left: 2%;
+    }
+    40% {
+      bottom: 40%;
+      left: 3%;
+    }
+    45% {
+      bottom: 45%;
+      left: 2%;
+    }
+    50% {
+      bottom: 50%;
+      left: 3%;
+    }
+    55% {
+      bottom: 55%;
+      left: 2%;
+    }
+    60% {
+      bottom: 60%;
+      left: 3%;
+    }
+    65% {
+      bottom: 65%;
+      left: 2%;
+    }
+    70% {
+      bottom: 70%;
+      left: 3%;
+    }
+    75% {
+      bottom: 75%;
+      left: 2%;
+    }
+    80% {
+      bottom: 80%;
+      left: 3%;
+    }
+    85% {
+      bottom: 85%;
+      left: 2%;
+    }
+    90% {
+      bottom: 90%;
+      left: 3%;
+    }
+    95% {
+      bottom: 95%;
+      left: 2%;
+    }
+    100% {
+      bottom: 100%;
+      left: 3%;
+    }
+  }
+  /****** forsøg 3 ********/
+  .heart3-container {
+    width: 5%;
+    position: absolute;
+    aspect-ratio: 23/20;
+    bottom: 0%;
+    left: 5%;
+    z-index: -1;
+  }
+  .heart3-sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/heart2.svg);
+    background-size: 100%;
+  }
+
+  .float3 {
+    animation-name: float3_kf;
+    animation-duration: 10s; /* Decreased duration to make the animation faster */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* Change the timing function to ease-in-out */
+  }
+
+  @keyframes float3_kf {
+    0% {
+      bottom: 0;
+      transform: translateX(-50%) rotate(0);
+    }
+    25% {
+      bottom: 25%;
+      transform: translateX(-50%) rotate(10deg);
+    }
+    50% {
+      bottom: 50%;
+      transform: translateX(-50%) rotate(0);
+    }
+    75% {
+      bottom: 75%;
+      transform: translateX(-50%) rotate(-10deg);
+    }
+    100% {
+      bottom: 100%;
+      transform: translateX(-50%) rotate(0);
+    }
   }
 }
 
-/***** mobil format ****/
-
-@media (max-width: 689px) {
-  h2 {
-    padding-block: 10px;
-  }
-
-  .box {
-    margin: 50px 8px 10px 8px;
-  }
-}
 /****** check-box *********/
 
 .checkbox-box {
@@ -145,271 +427,4 @@ button {
   color: var(--secondary);
   font-size: 16px;
   line-height: 20px;
-}
-
-/****** hjerter *****/
-
-.heart1-container {
-  width: 5%;
-  position: absolute;
-  aspect-ratio: 23/20;
-  bottom: 0%;
-  left: 5%;
-}
-.heart1-sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/heart1.svg);
-  background-size: 100%;
-}
-
-/*** bevægelse ****/
-
-.float1 {
-  animation-name: float1_kf;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes float1_kf {
-  0% {
-    bottom: 0;
-    left: 1%; /* Start at the left */
-  }
-  5% {
-    bottom: 5%;
-    left: 0%;
-  }
-  10% {
-    bottom: 10%;
-    left: 1%;
-  }
-  15% {
-    bottom: 15%;
-    left: 0%;
-  }
-  20% {
-    bottom: 20%;
-    left: 1%;
-  }
-  25% {
-    bottom: 25%;
-    left: 0;
-  }
-
-  30% {
-    bottom: 30%;
-    left: 1%;
-  }
-  35% {
-    bottom: 35%;
-    left: 0;
-  }
-  40% {
-    bottom: 40%;
-    left: 1%;
-  }
-  45% {
-    bottom: 45%;
-    left: 0;
-  }
-  50% {
-    bottom: 50%;
-    left: 1%;
-  }
-  55% {
-    bottom: 55%;
-    left: 0;
-  }
-  60% {
-    bottom: 60%;
-    left: 1%;
-  }
-  65% {
-    bottom: 65%;
-    left: 0;
-  }
-  70% {
-    bottom: 70%;
-    left: 1%;
-  }
-  75% {
-    bottom: 75%;
-    left: 0;
-  }
-  80% {
-    bottom: 80%;
-    left: 1%;
-  }
-  85% {
-    bottom: 85%;
-    left: 0;
-  }
-  90% {
-    bottom: 90%;
-    left: 1%;
-  }
-  95% {
-    bottom: 95%;
-    left: 0;
-  }
-  100% {
-    bottom: 100%;
-    left: 1%;
-  }
-}
-
-/***** forsøg 2 ******/
-.heart2-container {
-  width: 5%;
-  position: absolute;
-  aspect-ratio: 23/20;
-  bottom: 0%;
-  left: 5%;
-}
-.heart2-sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/heart2.svg);
-  background-size: 100%;
-}
-
-.float2 {
-  animation-name: float2_kf;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes float2_kf {
-  0% {
-    bottom: 0;
-    left: 3%; /* Start at the left */
-  }
-  5% {
-    bottom: 5%;
-    left: 2%;
-  }
-  10% {
-    bottom: 10%;
-    left: 3%;
-  }
-  15% {
-    bottom: 15%;
-    left: 2%;
-  }
-  20% {
-    bottom: 20%;
-    left: 3%;
-  }
-  25% {
-    bottom: 25%;
-    left: 2%;
-  }
-
-  30% {
-    bottom: 30%;
-    left: 3%;
-  }
-  35% {
-    bottom: 35%;
-    left: 2%;
-  }
-  40% {
-    bottom: 40%;
-    left: 3%;
-  }
-  45% {
-    bottom: 45%;
-    left: 2%;
-  }
-  50% {
-    bottom: 50%;
-    left: 3%;
-  }
-  55% {
-    bottom: 55%;
-    left: 2%;
-  }
-  60% {
-    bottom: 60%;
-    left: 3%;
-  }
-  65% {
-    bottom: 65%;
-    left: 2%;
-  }
-  70% {
-    bottom: 70%;
-    left: 3%;
-  }
-  75% {
-    bottom: 75%;
-    left: 2%;
-  }
-  80% {
-    bottom: 80%;
-    left: 3%;
-  }
-  85% {
-    bottom: 85%;
-    left: 2%;
-  }
-  90% {
-    bottom: 90%;
-    left: 3%;
-  }
-  95% {
-    bottom: 95%;
-    left: 2%;
-  }
-  100% {
-    bottom: 100%;
-    left: 3%;
-  }
-}
-/****** forsøg 3 ********/
-.heart3-container {
-  width: 5%;
-  position: absolute;
-  aspect-ratio: 23/20;
-  bottom: 0%;
-  left: 5%;
-}
-.heart3-sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/heart2.svg);
-  background-size: 100%;
-}
-
-.float3 {
-  animation-name: float3_kf;
-  animation-duration: 10s; /* Decreased duration to make the animation faster */
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; /* Change the timing function to ease-in-out */
-}
-
-@keyframes float3_kf {
-  0% {
-    bottom: 0;
-    transform: translateX(-50%) rotate(0);
-  }
-  25% {
-    bottom: 25%;
-    transform: translateX(-50%) rotate(10deg);
-  }
-  50% {
-    bottom: 50%;
-    transform: translateX(-50%) rotate(0);
-  }
-  75% {
-    bottom: 75%;
-    transform: translateX(-50%) rotate(-10deg);
-  }
-  100% {
-    bottom: 100%;
-    transform: translateX(-50%) rotate(0);
-  }
 }
