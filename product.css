@@ -16,30 +16,16 @@ body {
 
 /*************** Box *********************/
 
-.box {
-  line-height: 70px;
-  column-gap: 50px;
-}
-
 .right {
   text-align: right;
 }
 
-/*************** Text *********************/
-
-h3 {
-  font-size: 1.8rem;
-}
-
-p {
-  line-height: 1.5;
-  font-size: 0.9rem;
-}
-
-#paymentreq {
-  font-size: 1.7rem;
-  margin-bottom: 30px;
-  font-weight: bolder;
+#celebritiesOnSite {
+  position: relative;
+  color: var(--white);
+  background-color: var(--primary);
+  z-index: 1;
+  font-size: 2rem;
 }
 
 /*************** Button *********************/
@@ -53,9 +39,55 @@ p {
   border-radius: 20px;
 }
 
-/*************** Media *********************/
+/*************** web version *********************/
 
-@media (max-width: 550px) {
+@media (min-width: 900px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin-top: 35px;
+    line-height: 70px;
+    column-gap: 50px;
+  }
+
+  .website_button a {
+    font-size: 1.9rem;
+  }
+
+  .left {
+    order: -1;
+    margin-top: 90px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+
+  #paymentreq {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    font-weight: bolder;
+  }
+
+  #celebritiesOnSite {
+    color: var(--white);
+  }
+}
+
+/***** mobil format box ****/
+
+@media (max-width: 689px) {
+  .box {
+    margin: 50px 8px 10px 8px;
+  }
+}
+
+@media (max-width: 900px) {
   h1 {
     font-size: 3rem;
   }
@@ -71,35 +103,5 @@ p {
 
   .website_button a {
     font-size: 1rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .box {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    margin-top: 70px;
-  }
-
-  .website_button a {
-    font-size: 1.9rem;
-  }
-
-  .left {
-    order: -1;
-  }
-
-  .left {
-    margin-top: 90px;
-  }
-}
-
-@media (max-width: 350px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 0.6rem;
   }
 }
