@@ -3,7 +3,10 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+main {
+  background: var(--baggrund);
+  padding: 10px 0px 30px 0px;
+}
 /*************** Color *********************/
 
 .primary {

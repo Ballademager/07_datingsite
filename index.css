@@ -3,6 +3,7 @@
 body {
   background-image: url(img/forsidebillede.webp);
 }
+
 #front_text {
   display: grid;
   text-align: center;
