@@ -3,7 +3,10 @@
 body {
   background-image: url(img/forsidebillede.webp);
 }
-
+main {
+  background-color: var(--baggrund);
+  padding: 10px 0px 30px 0px;
+}
 #front_text {
   display: grid;
   text-align: center;
