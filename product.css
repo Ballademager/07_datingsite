@@ -16,37 +16,16 @@ body {
 
 /*************** Box *********************/
 
-.box {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  line-height: 70px;
-  column-gap: 50px;
-  margin-top: 70px;
-}
-
-.left {
-  margin-top: 90px;
-}
-
 .right {
   text-align: right;
 }
 
-/*************** Text *********************/
-
-h3 {
-  font-size: 1.9rem;
-}
-
-p {
-  line-height: 1.5;
-  font-size: 0.9rem;
-}
-
-#paymentreq {
-  font-size: 1.7rem;
-  margin-bottom: 30px;
-  font-weight: bolder;
+#celebritiesOnSite {
+  position: relative;
+  color: var(--white);
+  background-color: var(--primary);
+  z-index: 1;
+  font-size: 2rem;
 }
 
 /*************** Button *********************/
@@ -55,8 +34,74 @@ p {
   background-color: var(--baggrund);
   color: var(--white);
   font-weight: bolder;
-  font-size: 1.9rem;
   text-decoration: none;
   padding: 5px 30px;
   border-radius: 20px;
+}
+
+/*************** web version *********************/
+
+@media (min-width: 900px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin-top: 35px;
+    line-height: 70px;
+    column-gap: 50px;
+  }
+
+  .website_button a {
+    font-size: 1.9rem;
+  }
+
+  .left {
+    order: -1;
+    margin-top: 90px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+
+  #paymentreq {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    font-weight: bolder;
+  }
+
+  #celebritiesOnSite {
+    color: var(--white);
+  }
+}
+
+/***** mobil format box ****/
+
+@media (max-width: 689px) {
+  .box {
+    margin: 50px 8px 10px 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .nav_button {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .website_button a {
+    font-size: 1rem;
+  }
 }
