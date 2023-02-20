@@ -17,15 +17,8 @@ body {
 /*************** Box *********************/
 
 .box {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
   line-height: 70px;
   column-gap: 50px;
-  margin-top: 70px;
-}
-
-.left {
-  margin-top: 90px;
 }
 
 .right {
@@ -35,7 +28,7 @@ body {
 /*************** Text *********************/
 
 h3 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 p {
@@ -55,8 +48,58 @@ p {
   background-color: var(--baggrund);
   color: var(--white);
   font-weight: bolder;
-  font-size: 1.9rem;
   text-decoration: none;
   padding: 5px 30px;
   border-radius: 20px;
+}
+
+/*************** Media *********************/
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .nav_button {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .website_button a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin-top: 70px;
+  }
+
+  .website_button a {
+    font-size: 1.9rem;
+  }
+
+  .left {
+    order: -1;
+  }
+
+  .left {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
 }
