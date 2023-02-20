@@ -3,7 +3,10 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+main {
+  background: var(--baggrund);
+  padding: 10px 0px 30px 0px;
+}
 /*************** Color *********************/
 
 .primary {
@@ -20,7 +23,7 @@ body {
   text-align: right;
 }
 
-#celebritiesOnSite {
+.celebritiesOnSite {
   position: relative;
   color: var(--white);
   background-color: var(--primary);
@@ -68,13 +71,13 @@ body {
     font-size: 0.9rem;
   }
 
-  #paymentreq {
+  .paymentreq {
     font-size: 1.7rem;
     margin-bottom: 30px;
     font-weight: bolder;
   }
 
-  #celebritiesOnSite {
+  .celebritiesOnSite {
     color: var(--white);
   }
 }

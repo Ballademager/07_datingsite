@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="productlist.css" />
-    <title>DatA-bae</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <a href="index.html">DatA-bae</a>
-      </div>
-      <div class="nav_button">
-        <a href="categories.html">Categories</a>
-        <a href="form.html">Add a site</a>
-      </div>
-    </header>
-    <main>
-      <h1>Category</h1>
-      <div class="checkbox-box">
-        <form action="/action_page.php">
-        <input type="checkbox"  id="affair" name="sub-category" value="affair">
-        <label  for="affair">Affair</label>
-        <input type="checkbox" id="appearance" name="sub-category" value="appearance">
-        <label for="appearance">Appearance</label>
-        <input type="checkbox" id="education" name="sub-category" value="education">
-        <label for="education">Education</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="productlist.css" />
+  <title>DatA-bae</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">DatA-bae</a>
+    </div>
+    <div class="nav_button">
+      <a href="categories.html">Categories</a>
+      <a href="form.html">Add a site</a>
+    </div>
+  </header>
+  <main>
+    <h1>Category</h1>
+    <div class="checkbox-box">
+      <form action="/action_page.php">
+          <input type="checkbox" id="affair" name="sub-category" value="affair">
+          <label for="affair">Affair</label>
+          <input type="checkbox" id="appearance" name="sub-category" value="appearance">
+          <label for="appearance">Appearance</label>
+          <input type="checkbox" id="education" name="sub-category" value="education">
+          <label for="education">Education</label>
 
         <input type="checkbox" id="food" name="sub-category" value="food">
-        <label for="food">Food</label>
-        <input type="checkbox" id="gay" name="sub-category" value="gay">
-        <label for="gay">Gay/Trans</label>
-        <input type="checkbox" id="lesbian" name="sub-category" value="lesbian">
-        <label for="lesbian">Lesbian/Trans</label>
+          <label for="food">Food</label>
+          <input type="checkbox" id="gay" name="sub-category" value="gay">
+          <label for="gay">Gay/Trans</label>
+          <input type="checkbox" id="lesbian" name="sub-category" value="lesbian">
+          <label for="lesbian">Lesbian/Trans</label>
 
         <input type="checkbox" id="partialism" name="sub-category" value="partialism">
-        <label for="partialism">Partialism</label>
-        <input type="checkbox" id="POC" name="sub-category" value="POC">
-        <label for="POC">POC</label>
-        <input type="checkbox" id="political" name="sub-category" value="political">
-        <label for="political">Political</label>
+          <label for="partialism">Partialism</label>
+          <input type="checkbox" id="POC" name="sub-category" value="POC">
+          <label for="POC">POC</label>
+          <input type="checkbox" id="political" name="sub-category" value="political">
+          <label for="political">Political</label>
 
         <input type="checkbox" id="polyamours" name="sub-category" value="polyamours">
-        <label for="polyamours">Polyamours</label>
-        <input type="checkbox" id="sugardating" name="sub-category" value="sugardating">
-        <label for="sugardating">Sugardating</label>
-        </div>
+          <label for="polyamours">Polyamours</label>
+          <input type="checkbox" id="sugardating" name="sub-category" value="sugardating">
+          <label for="sugardating">Sugardating</label>
+    </div>
 
+    <template>
       <section class="box">
         <p class="free">Free</p>
-        <p class="anbefalet">anbefalet af <br> Channing Tatum</p>
+        <p class="anbefalet">anbefalet af <br> <span></span></p>
 
         <div class="billede">
           <img src="/img/tinder.webp" alt="tinder" />
@@ -61,34 +63,37 @@
         <div class="indhold">
           <h2>Facebookdating</h2>
           <h3 class="slogan">"The world's larges social networking app for gay, bi, trans and queer people "</h3>
-        <a href="product.html">Read more</a>
-      </div>
-      </section>
-
-      <section class="box">
-        <p class="free">Free</p>
-        <p class="anbefalet">anbefalet af <br> Channing Tatum</p>
-        <div class="billede">
-          <img src="/img/bumble.webp" alt="tinder" />
+          <a href="product.html">Read more</a>
         </div>
-        <div class="indhold">
-          <h2>Bumble</h2>
-          <h3 class="slogan">"Tag det første skridt."</h3>
+      </section>
+    </template>
+
+    <!-- <section class="box">
+      <p class="free">Free</p>
+      <p class="anbefalet">anbefalet af <br> Channing Tatum</p>
+      <div class="billede">
+        <img src="/img/bumble.webp" alt="tinder" />
+      </div>
+      <div class="indhold">
+        <h2>Bumble</h2>
+        <h3 class="slogan">"Tag det første skridt."</h3>
         <a href="product.html">Read more</a>
       </div>
-      </section>
+    </section> -->
 
 
-      <div class="heart1-container">
-        <div class="heart1-sprite"></div>
-      </div>
-      <div class="heart2-container">
-        <div class="heart2-sprite"></div>
-      </div>
-      <div class="heart3-container">
-        <div class="heart3-sprite"></div>
-      </div>
-    </main> 
-    <script src="animation.js"></script>
-  </body>
+    <div class="heart1-container">
+      <div class="heart1-sprite"></div>
+    </div>
+    <div class="heart2-container">
+      <div class="heart2-sprite"></div>
+    </div>
+    <div class="heart3-container">
+      <div class="heart3-sprite"></div>
+    </div>
+  </main>
+  <script src="productlist.js"></script>
+  <script src="animation.js"></script>
+</body>
+
 </html>
