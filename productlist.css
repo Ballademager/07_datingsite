@@ -1,0 +1,415 @@
+:root {
+  --primary: #950404;
+  --secondary: #d58b8b;
+  --baggrund: #f3a3b1;
+  --knap: #f5bcd1;
+  --nav: #fddcd2;
+  --box: #f9dce7;
+  --white: #fff;
+
+  --ff-lobster: "Lobster", cursive;
+  --ff-text: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+}
+h2 {
+  font-family: var(--ff-lobster);
+  color: var(--primary);
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-family: var(--ff-lobster);
+  color: var(--secondary);
+}
+
+main {
+  background-color: var(--baggrund);
+  padding-bottom: 100px;
+}
+
+.box {
+  background-color: #f9dce7;
+  padding-inline: 2.2rem;
+  padding-block: 3rem;
+  border-radius: 70px;
+}
+
+.billede {
+  background-color: green; /*skal slettes*/
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+img {
+  display: block;
+}
+
+.free {
+  font-family: var(--ff-text);
+  color: var(--knap);
+  position: absolute;
+  margin-top: 20px;
+  background-color: white;
+  padding: 3px 15px 3px 15px;
+  box-shadow: 2px 2px 5px rgb(104 37 37);
+}
+
+button {
+  font-size: large;
+  color: var(--white);
+  background-color: var(--knap);
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+/******* add class *********/
+
+.hidden {
+  display: none;
+}
+
+/***** web format *******/
+
+@media (min-width: 690px) {
+  .box {
+    display: grid;
+    grid-template-columns: 175px auto;
+    height: 260px;
+    margin: 50px 110px;
+  }
+
+  .indhold {
+    margin-left: 1rem;
+  }
+}
+
+/***** mobil format ****/
+
+@media (max-width: 689px) {
+  h2 {
+    padding-block: 10px;
+  }
+
+  .box {
+    margin: 50px 8px 10px 8px;
+  }
+}
+/****** check-box *********/
+
+.checkbox-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.checkbox-box label {
+  display: inline-block;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+
+  font-family: var(--ff-text);
+  font-size: small;
+  color: var(--secondary);
+}
+
+.checkbox-box input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-box input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: var(--white);
+}
+
+.checkbox-box input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  color: var(--secondary);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/****** hjerter *****/
+
+.heart1-container {
+  width: 5%;
+  position: absolute;
+  aspect-ratio: 23/20;
+  bottom: 0%;
+  left: 5%;
+}
+.heart1-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/heart1.svg);
+  background-size: 100%;
+}
+
+/*** bevægelse ****/
+
+.float1 {
+  animation-name: float1_kf;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes float1_kf {
+  0% {
+    bottom: 0;
+    left: 1%; /* Start at the left */
+  }
+  5% {
+    bottom: 5%;
+    left: 0%;
+  }
+  10% {
+    bottom: 10%;
+    left: 1%;
+  }
+  15% {
+    bottom: 15%;
+    left: 0%;
+  }
+  20% {
+    bottom: 20%;
+    left: 1%;
+  }
+  25% {
+    bottom: 25%;
+    left: 0;
+  }
+
+  30% {
+    bottom: 30%;
+    left: 1%;
+  }
+  35% {
+    bottom: 35%;
+    left: 0;
+  }
+  40% {
+    bottom: 40%;
+    left: 1%;
+  }
+  45% {
+    bottom: 45%;
+    left: 0;
+  }
+  50% {
+    bottom: 50%;
+    left: 1%;
+  }
+  55% {
+    bottom: 55%;
+    left: 0;
+  }
+  60% {
+    bottom: 60%;
+    left: 1%;
+  }
+  65% {
+    bottom: 65%;
+    left: 0;
+  }
+  70% {
+    bottom: 70%;
+    left: 1%;
+  }
+  75% {
+    bottom: 75%;
+    left: 0;
+  }
+  80% {
+    bottom: 80%;
+    left: 1%;
+  }
+  85% {
+    bottom: 85%;
+    left: 0;
+  }
+  90% {
+    bottom: 90%;
+    left: 1%;
+  }
+  95% {
+    bottom: 95%;
+    left: 0;
+  }
+  100% {
+    bottom: 100%;
+    left: 1%;
+  }
+}
+
+/***** forsøg 2 ******/
+.heart2-container {
+  width: 5%;
+  position: absolute;
+  aspect-ratio: 23/20;
+  bottom: 0%;
+  left: 5%;
+}
+.heart2-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/heart2.svg);
+  background-size: 100%;
+}
+
+.float2 {
+  animation-name: float2_kf;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes float2_kf {
+  0% {
+    bottom: 0;
+    left: 3%; /* Start at the left */
+  }
+  5% {
+    bottom: 5%;
+    left: 2%;
+  }
+  10% {
+    bottom: 10%;
+    left: 3%;
+  }
+  15% {
+    bottom: 15%;
+    left: 2%;
+  }
+  20% {
+    bottom: 20%;
+    left: 3%;
+  }
+  25% {
+    bottom: 25%;
+    left: 2%;
+  }
+
+  30% {
+    bottom: 30%;
+    left: 3%;
+  }
+  35% {
+    bottom: 35%;
+    left: 2%;
+  }
+  40% {
+    bottom: 40%;
+    left: 3%;
+  }
+  45% {
+    bottom: 45%;
+    left: 2%;
+  }
+  50% {
+    bottom: 50%;
+    left: 3%;
+  }
+  55% {
+    bottom: 55%;
+    left: 2%;
+  }
+  60% {
+    bottom: 60%;
+    left: 3%;
+  }
+  65% {
+    bottom: 65%;
+    left: 2%;
+  }
+  70% {
+    bottom: 70%;
+    left: 3%;
+  }
+  75% {
+    bottom: 75%;
+    left: 2%;
+  }
+  80% {
+    bottom: 80%;
+    left: 3%;
+  }
+  85% {
+    bottom: 85%;
+    left: 2%;
+  }
+  90% {
+    bottom: 90%;
+    left: 3%;
+  }
+  95% {
+    bottom: 95%;
+    left: 2%;
+  }
+  100% {
+    bottom: 100%;
+    left: 3%;
+  }
+}
+/****** forsøg 3 ********/
+.heart3-container {
+  width: 5%;
+  position: absolute;
+  aspect-ratio: 23/20;
+  bottom: 0%;
+  left: 5%;
+}
+.heart3-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/heart2.svg);
+  background-size: 100%;
+}
+
+.float3 {
+  animation-name: float3_kf;
+  animation-duration: 10s; /* Decreased duration to make the animation faster */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; /* Change the timing function to ease-in-out */
+}
+
+@keyframes float3_kf {
+  0% {
+    bottom: 0;
+    transform: translateX(-50%) rotate(0);
+  }
+  25% {
+    bottom: 25%;
+    transform: translateX(-50%) rotate(10deg);
+  }
+  50% {
+    bottom: 50%;
+    transform: translateX(-50%) rotate(0);
+  }
+  75% {
+    bottom: 75%;
+    transform: translateX(-50%) rotate(-10deg);
+  }
+  100% {
+    bottom: 100%;
+    transform: translateX(-50%) rotate(0);
+  }
+}
