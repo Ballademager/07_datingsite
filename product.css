@@ -2,20 +2,36 @@
 
 h3,
 .paymentreq {
-  color: #d58b8b;
+  color: var(--secondary);
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-  color: #950404;
+  color: var(--primary);
   line-height: 1.6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.website_button {
-  background-color: #f9dce7;
-  color: white;
+.website_button a {
+  background-color: var(--baggrund);
+  color: var(--white);
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px 30px;
+  margin: 5px 0px;
+  border-radius: 20px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 70px;
+  gap: 30px;
+}
+
+.right {
+  text-align: right;
 }

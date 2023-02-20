@@ -12,14 +12,14 @@ body {
 h1 {
   font-family: "Lobster", cursive;
   font-size: 10rem;
-  color: #950404;
+  color: var(--primary);
 }
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.5rem;
-  color: white;
+  color: var(--white);
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #950404;
+  -webkit-text-stroke-color: var(--primary);
 }
