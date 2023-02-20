@@ -23,7 +23,7 @@ main {
   text-align: right;
 }
 
-#celebritiesOnSite {
+.celebritiesOnSite {
   position: relative;
   color: var(--white);
   background-color: var(--primary);
@@ -71,13 +71,13 @@ main {
     font-size: 0.9rem;
   }
 
-  #paymentreq {
+  .paymentreq {
     font-size: 1.7rem;
     margin-bottom: 30px;
     font-weight: bolder;
   }
 
-  #celebritiesOnSite {
+  .celebritiesOnSite {
     color: var(--white);
   }
 }
