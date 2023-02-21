@@ -6,7 +6,7 @@ console.log("does it work?");
 fetch(`https://datingsite-5862.restdb.io/rest/datingsites?q={"category":"${myCategory}"}`, {
   method: "get",
   headers: {
-    "x-apikey": "63eb7fb5478852088da68254",
+    "x-apikey": "63f4d5f5478852088da68529",
   },
 })
   .then((res) => res.json())

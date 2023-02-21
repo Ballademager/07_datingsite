@@ -5,7 +5,7 @@ const id = urlParams.get("id");
 fetch("https://datingsite-5862.restdb.io/rest/datingsites/" + id, {
   method: "get",
   headers: {
-    "x-apikey": "63eb7fb5478852088da68254",
+    "x-apikey": "63f4d5f5478852088da68529",
   },
 })
   .then((res) => res.json())
