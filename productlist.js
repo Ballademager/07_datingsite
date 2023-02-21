@@ -34,6 +34,7 @@ function showApp(app) {
     console.log("myArray has some content");
     copy.querySelector(".anbefalet span").textContent = app.celebritiesOnSite;
   } else {
+    console.log(".anbefalet");
     copy.querySelector(".anbefalet").classList.add("hidden");
   }
   // if (app.celebritiesOnSite == "") {
