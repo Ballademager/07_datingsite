@@ -1,4 +1,6 @@
-// 63eb7fb5478852088da68254
+const urlParams = new URLSearchParams(window.location.search);
+// const category = urlParams.get("category");
+
 console.log("does it work?");
 fetch("https://datingsite-5862.restdb.io/rest/datingsites", {
   method: "get",
