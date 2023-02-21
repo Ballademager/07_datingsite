@@ -1,7 +1,10 @@
 /*************** Font *********************/
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--ff-text);
+}
+h1 {
+  font-family: var(--ff-lobster);
 }
 main {
   background: var(--baggrund);
