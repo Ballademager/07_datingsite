@@ -29,9 +29,16 @@ function showApp(app) {
   if (app.paymentreq) {
     copy.querySelector(".free").classList.add("hidden");
   }
-  if (app.celebritiesOnSite == "") {
+
+  if (app.celebritiesOnSite.length > 0) {
+    console.log("myArray has some content");
+    copy.querySelector(".anbefalet span").textContent = app.celebritiesOnSite;
+  } else {
     copy.querySelector(".anbefalet").classList.add("hidden");
-    copy.querySelector(".anbefalet").textContent = app.celebritiesOnSite;
   }
+  // if (app.celebritiesOnSite == "") {
+  //   copy.querySelector(".anbefalet").classList.add("hidden");
+  //   copy.querySelector(".anbefalet").textContent = app.celebritiesOnSite;
+  // }
   document.querySelector("main").appendChild(copy);
 }
