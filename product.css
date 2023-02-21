@@ -72,6 +72,7 @@ section {
     grid-template-columns: 1.3fr 1fr;
     margin-top: 35px;
     column-gap: 50px;
+    row-gap: 10px;
   }
 
   .website_button a {
