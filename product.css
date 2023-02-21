@@ -58,7 +58,6 @@ main {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     margin-top: 35px;
-    line-height: 70px;
     column-gap: 50px;
   }
 
@@ -73,10 +72,11 @@ main {
 
   h3 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   p {
-    line-height: 1.5;
+    line-height: 25px;
     font-size: 0.9rem;
   }
 
