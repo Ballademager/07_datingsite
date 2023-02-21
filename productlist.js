@@ -15,6 +15,7 @@ fetch(`https://datingsite-5862.restdb.io/rest/datingsites?q={"category":"${myCat
 
 function showApps(apps) {
   apps.forEach(showApp);
+  document.querySelector("h1").textContent = `${myCategory}`;
 }
 
 function showApp(app) {
@@ -30,9 +31,8 @@ function showApp(app) {
     copy.querySelector(".free").classList.add("hidden");
   }
 
-  if (app.celebritiesOnSite.length > 0) {
-    console.log("myArray has some content");
-    copy.querySelector(".anbefalet span").textContent = app.celebritiesOnSite;
+  if (app.celebritiesOnSite.length) {
+    copy.querySelector(".anbefalet span").textContent = app.celebritiesOnSite[Math.floor(Math.random() * app.celebritiesOnSite.length)];
   } else {
     console.log(".anbefalet");
     copy.querySelector(".anbefalet").classList.add("hidden");
