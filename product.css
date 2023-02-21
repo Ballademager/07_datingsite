@@ -1,7 +1,10 @@
 /*************** Font *********************/
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--ff-text);
+}
+h1 {
+  font-family: var(--ff-lobster);
 }
 main {
   background: var(--baggrund);
@@ -31,6 +34,15 @@ main {
   font-size: 2rem;
 }
 
+.banner {
+  color: var(--white);
+  position: absolute;
+  font-size: 1.7rem;
+  margin-top: 5rem;
+  background-color: var(--primary);
+  padding: 15px 30px;
+}
+
 /*************** Button *********************/
 
 .website_button a {
@@ -49,7 +61,6 @@ main {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     margin-top: 35px;
-    line-height: 70px;
     column-gap: 50px;
   }
 
@@ -64,10 +75,11 @@ main {
 
   h3 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   p {
-    line-height: 1.5;
+    line-height: 25px;
     font-size: 0.9rem;
   }
 
@@ -107,4 +119,7 @@ main {
   .website_button a {
     font-size: 1rem;
   }
+}
+.hidden {
+  display: none;
 }

@@ -1,8 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
-// const category = urlParams.get("category");
+const myCategory = urlParams.get("category");
+console.log("noget: " + myCategory);
 
 console.log("does it work?");
-fetch("https://datingsite-5862.restdb.io/rest/datingsites", {
+fetch(`https://datingsite-5862.restdb.io/rest/datingsites?q={"category":"${myCategory}"}`, {
   method: "get",
   headers: {
     "x-apikey": "63eb7fb5478852088da68254",
@@ -23,7 +24,7 @@ function showApp(app) {
   copy.querySelector("img").src = app.image;
   copy.querySelector("h2").textContent = app.name;
   copy.querySelector("h3").textContent = `"${app.slogan}"`;
-  copy.querySelector("a").setAttribute("href", `product.html?name=${app.name}`);
+  copy.querySelector("a").setAttribute("href", `product.html?id=${app._id}`);
 
   if (app.paymentreq) {
     copy.querySelector(".free").classList.add("hidden");
