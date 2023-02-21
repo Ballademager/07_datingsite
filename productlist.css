@@ -63,6 +63,7 @@ main {
 .indhold a {
   text-decoration: none;
   margin-top: auto;
+  font-family: var(--ff-text);
   font-size: large;
   color: var(--white);
   background-color: var(--knap);
@@ -102,10 +103,17 @@ main {
   }
 
   .box {
+    display: grid;
     margin: 50px 8px 10px 8px;
   }
   .indhold a {
     margin-top: 2rem;
+  }
+  .anbefalet {
+    font-size: small;
+  }
+  .free {
+    top: 1%;
   }
 }
 
@@ -126,6 +134,9 @@ main {
     height: 175px;
     width: 175px;
     object-fit: cover;
+  }
+  .anbefalet {
+    justify-self: center;
   }
 
   .free {
