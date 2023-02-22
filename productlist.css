@@ -67,6 +67,7 @@ main {
   font-size: large;
   color: var(--white);
   background-color: var(--knap);
+  font-family: var(--ff-text);
   padding: 5px 10px 5px 10px;
   border: none;
   border-radius: 20px;
@@ -109,7 +110,15 @@ main {
     top: 15%;
   }
 }
-
+@media (max-width: 450px) {
+  .anbefalet {
+    top: -5%;
+    padding-block: 4px;
+    padding-inline: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+}
 /***** web format *******/
 
 @media (min-width: 690px) {

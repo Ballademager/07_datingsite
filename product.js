@@ -27,6 +27,7 @@ function showApp(app) {
   console.log("founded: " + app.founded);
   document.querySelector(".founded").textContent = app.founded;
   document.querySelector(".description").textContent = `${app.name} ${app.description}`;
+  document.querySelector(".website_button a").setAttribute("href", app.link);
   console.log("app.link: " + app.link);
   //   document.querySelector("website_button a").setAttribute("href", app.link);
 }
