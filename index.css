@@ -23,3 +23,8 @@ p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary);
 }
+
+main {
+  display: grid;
+  place-items: center;
+}
