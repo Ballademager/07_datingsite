@@ -170,9 +170,6 @@ section {
     justify-self: center;
   }
 }
-.hidden {
-  display: none;
-}
 @media (max-width: 445px) {
   .celebritiesOnSite {
     max-width: 18ch;
@@ -201,4 +198,7 @@ section {
     font-size: 1.2rem;
     padding: 0.4rem 1rem;
   }
+}
+.hidden {
+  display: none;
 }

@@ -15,7 +15,7 @@ function showApp(app) {
   console.log("app data: " + app);
   document.querySelector("h1").textContent = app.name;
   // ret celebsOnsite
-  if (app.celebritiesOnSite) {
+  if (app.celebritiesOnSite.length) {
     document.querySelector(".celebritiesOnSite").textContent = `${app.celebritiesOnSite[Math.floor(Math.random() * app.celebritiesOnSite.length)]} uses this site`;
   } else {
     document.querySelector(".celebritiesOnSite").classList.add("hidden");
