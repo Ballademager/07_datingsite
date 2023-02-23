@@ -23,6 +23,7 @@ function showApp(app) {
   // ---
   document.querySelector("h3").textContent = `"${app.slogan}"`;
   document.querySelector("img").src = app.image;
+  document.querySelector("img").alt = app.name + " logo";
   document.querySelector(".right p span").textContent = app.users;
   console.log("founded: " + app.founded);
   document.querySelector(".founded").textContent = app.founded;
