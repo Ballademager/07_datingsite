@@ -15,7 +15,12 @@ fetch(`https://datingsite-5862.restdb.io/rest/datingsites?q={"category":"${myCat
 
 function showApps(apps) {
   apps.forEach(showApp);
-  document.querySelector("h1").textContent = `${myCategory}`;
+  console.log(myCategory);
+  if (myCategory == "Standard") {
+    document.querySelector("h1").textContent = "Conventional";
+  } else {
+    document.querySelector("h1").textContent = `${myCategory}`;
+  }
 }
 
 function showApp(app) {
